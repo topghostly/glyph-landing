@@ -1,0 +1,62 @@
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import NavButton from "./buttons";
+import { Github } from "lucide-react";
+
+function NavBar() {
+  const INTERNAL_LINKS: { name: string; href: string }[] = [
+    {
+      name: "Blogs",
+      href: "#",
+    },
+    {
+      name: "Editor",
+      href: "#",
+    },
+  ];
+  return (
+    <header className=" absolute top-0 left-0 w-full text-[14px] z-10">
+      <div className="container flex justify-between items-center h-[64px]">
+        <div className="w-fit flex gap-20">
+          <Link href={"/"}>
+            <div className="relative w-fit">
+              <Image
+                src={"/images/glyph-05.svg"}
+                alt="glyph logo"
+                width={90}
+                height={60}
+              />
+            </div>
+          </Link>
+
+          {/* <----------FIRST LINK----------> */}
+          <ul className="flex gap-2 justify-center items-center">
+            {INTERNAL_LINKS.map((link, index) => (
+              <li
+                key={index}
+                className="px-2 py-1 w-fit h-fit rounded flex justify-center items-center hover:bg-white/10 transition-all"
+              >
+                <Link href={link.href}>{link.name}</Link>
+              </li>
+            ))}
+          </ul>
+          {/* <----------FIRST LINK----------> */}
+        </div>
+
+        <div className="flex gap-2">
+          <NavButton classname="border-none flex gap-1 text-[14px] justify-center items-center">
+            <span>
+              <Github size={15} />
+            </span>
+            Star Us
+          </NavButton>
+          <NavButton>Sign In</NavButton>
+          <NavButton>Get started</NavButton>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+export default NavBar;

@@ -1,21 +1,148 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("../../public/fonts/Satoshi-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("../../public/fonts/Satoshi-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-satoshi-medium: "Satoshi-Medium", system-ui, sans-serif;
+  --font-satoshi-bold: "Satoshi-Bold", system-ui, sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-satoshi-m: var(--font-satoshi-medium);
+  --font-satoshi-b: var(--font-satoshi-bold);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: rgb(9, 9, 11);
+    --foreground: rgb(248, 248, 248);
+    --card: rgb(9, 9, 11);
+    --card-foreground: rgb(248, 248, 248);
+    --popover: rgb(9, 9, 11);
+    --popover-foreground: rgb(248, 248, 248);
+    --primary: rgb(248, 248, 248);
+    --primary-foreground: rgb(26, 26, 26);
+    --secondary: rgb(35, 35, 35);
+    --secondary-foreground: rgb(248, 248, 248);
+    --muted: rgb(35, 35, 35);
+    --muted-foreground: rgb(73, 73, 73);
+    --accent: rgb(35, 35, 35);
+    --accent-foreground: rgb(248, 248, 248);
+    --destructive: rgb(130, 40, 40);
+    --destructive-foreground: rgb(248, 248, 248);
+    --border: rgb(35, 35, 35);
+    --input: rgb(35, 35, 35);
+    --radius: 0.4rem;
+    --ring: rgb(200, 200, 220);
+    --chart-1: rgb(77, 124, 255);
+    --chart-2: rgb(51, 178, 153);
+    --chart-3: rgb(255, 153, 77);
+    --chart-4: rgb(178, 102, 255);
+    --chart-5: rgb(255, 77, 128);
+  }
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: hsl(240, 2%, 51%);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(240, 5.9%, 15%);
+  }
+  .container {
+    @apply mx-auto px-[20px];
+    max-width: 1280px;
+    overflow: hidden;
+  }
+  .gap_1 {
+    gap: clamp(4rem, 5vh, 13rem);
+  }
+  .gap_2 {
+    gap: clamp(3.5rem, 2vh, 6rem);
+  }
+  .gap_3 {
+    gap: clamp(2.5rem, 2vh, 4rem);
+  }
+  .heading-text {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+  }
+  .project-details-text {
+    font-size: clamp(1.8rem, 6vw, 3rem);
+    line-height: -100px;
+  }
+  .heading-image {
+    height: clamp(3rem, 6vw, 8rem);
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-7xl font-bold mb-4;
+  }
+  h2 {
+    @apply text-6xl font-bold mt-6 mb-2;
+  }
+  p {
+    @apply text-base leading-6 text-gray-800 dark:text-gray-300 mb-4 text-[18px];
   }
 }
 
