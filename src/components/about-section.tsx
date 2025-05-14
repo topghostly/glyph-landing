@@ -15,7 +15,30 @@ export default function AboutSection() {
         </div>
         <div className="mt-4 grid grid-rows-2 gap-6">
           <div className="w-full h-[26.25rem] gap-6 grid grid-cols-[26.25rem_1fr]">
-            <AboutCard>The test</AboutCard>
+            <AboutCard>
+              <div className="w-full h-full relative flex justify-center items-end">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover"
+                  style={{ opacity: 1 }}
+                >
+                  <source src="/videos/backup.mp4" type="video/mp4" />
+                  <source src="#" type="video/webm" />
+                </video>
+                <div className="relative bg-gradient-to-t from-background to-transparent h-[50%] w-full z-3 flex items-end p-4">
+                  <p className="text-[16px] p-0 m-0">
+                    <span className="text-white font-satoshi-b">
+                      Instant Draft Backup.{" "}
+                    </span>
+                    Drafts auto-save locally and upload whenever you&apos;re
+                    ready.
+                  </p>
+                </div>
+              </div>
+            </AboutCard>
             <AboutCard>The test</AboutCard>
           </div>
           <div className="w-full h-[26.25rem] gap-6 grid grid-cols-1">
