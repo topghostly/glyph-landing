@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./ui/button";
 import { ArrowDownRight } from "lucide-react";
 import Image from "next/image";
+import Scroll from "./scrool";
 
 export default function HeroSection() {
   return (
@@ -29,7 +30,7 @@ export default function HeroSection() {
 
       {/* <----------VIDEO BACKGROUND----------> */}
       <div className="relative h-full w-[1920px] left-[50%] aspect-[1.335187] translate-x-[-50%] top-0">
-        <div className="absolute w-full h-[220px] bg-gradient-to-t from-[#05070B] via-[#05070B] to-transparent bottom-[10px] z-3" />
+        <div className="absolute w-full h-[420px] bg-gradient-to-t from-[#05070B] via-[#05070B] to-transparent bottom-[10px] z-3" />
         <div className="w-[1017px] aspect-[1.538461538461538] absolute bottom-[45px] left-[355px] z-2">
           <Image
             src={"/images/MacBook.png"}
@@ -53,10 +54,11 @@ export default function HeroSection() {
         </video>
       </div>
       {/* <----------BOTTOM CAROUSEL----------> */}
-      <div className="mt-[400px] absolute bottom-0 max-w-[1280px] translate-x-[-50%] left-[50%] pb-[80px] z-10 w-full">
+      <div className="flex items-start flex-col justify-end absolute bottom-0 max-w-[1280px] translate-x-[-50%] left-[50%] pb-[80px] z-10 w-full">
         <p className="text-[14px]">
           Everything you need for seamless blogging:
         </p>
+        <Scroll />
       </div>
     </section>
   );

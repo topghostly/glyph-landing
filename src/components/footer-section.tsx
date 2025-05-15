@@ -35,7 +35,7 @@ export default function FooterSection() {
       </div>
       <footer>
         <div className="container h-[60px] flex justify-between items-center">
-          <p className="text-[14px] text-muted">
+          <p className="text-[14px] text-muted-foreground">
             Copyright ©&apos;2025&apos;Glyph inc. All rights reserved.
           </p>
           <p className="text-[14px] text-muted">
