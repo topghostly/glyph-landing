@@ -16,7 +16,7 @@ function NavBar() {
     },
   ];
   return (
-    <header className=" absolute top-0 left-0 w-full text-[14px] z-10">
+    <header className=" absolute top-0 left-0 w-full text-[14px] z-60">
       <div className="container flex justify-between items-center h-[64px]">
         <div className="w-fit flex gap-20">
           <Link href={"/"}>

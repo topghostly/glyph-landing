@@ -7,16 +7,16 @@ import Scroll from "./scrool";
 export default function HeroSection() {
   return (
     <section className="relative overflow-x-hidden bg-[#05070B]">
-      <div className="top-[160px] w-full absolute max-w-[1280px] translate-x-[-50%] left-[50%] pb-[80px] z-10">
-        <div className="flex flex-col gap-3">
-          <h1 className="font-satoshi-b max-w-[616px]">
+      <div className="top-[100px] xl:top-[160px] w-full absolute max-w-[1280px] translate-x-[-50%] left-[50%] pb-[60px] z-10 px-[20px]">
+        <div className="flex flex-col gap-2 md:gap-6 w-[60%] md:w-[100%]">
+          <h1 className="font-satoshi-b sm:w-full  md:max-w-[500px] xl:max-w-[616px] m-0">
             All You Need to Tell Your Story
           </h1>
-          <p className="max-w-[480px]">
-            Glyph is a offline-first CMS for seamless storytelling. Draft ideas
-            on the go, then sync to the web when you&apos;re ready.
+          <p className="sm:w-full md:max-w-[400px] xl:max-w-[480px] m-0">
+            Offline-first CMS: create anywhere, then sync when you&apos;re
+            ready.
           </p>
-          <div className="flex mt-5">
+          <div className="flex mt-2">
             <Button
               href="#"
               classname="flex gap-[1px] justify-center items-center"
@@ -25,13 +25,18 @@ export default function HeroSection() {
             </Button>
           </div>
         </div>
-        {/* <div className="absolute -left-[344px] bottom-0 z-0 aspect-[1.335187] w-[1920px] max-w-none mix-blend-lighten lg:bottom-[23px] lg:left-[-253px] lg:w-[1620px] md:bottom-[-2.1%] md:left-[-27%] md:w-[147%] sm:bottom-[5.4%] sm:left-[-34.95%] sm:w-[189%] xs:bottom-[1.9%] xs:left-[-36.2%] xs:w-[190%] xs:min-w-[704px] 2xs:bottom-[18px] 2xs:left-[-132px] before:absolute before:top-0 before:z-10 before:hidden before:h-20 before:w-full before:bg-gradient-to-b before:from-grey-1 before:to-grey-1/0 sm:before:block bg-amber-700"></div> */}
       </div>
-
       {/* <----------VIDEO BACKGROUND----------> */}
-      <div className="relative h-full w-[1920px] left-[50%] aspect-[1.335187] translate-x-[-50%] top-0">
-        <div className="absolute w-full h-[420px] bg-gradient-to-t from-[#05070B] via-[#05070B] to-transparent bottom-[10px] z-3" />
-        <div className="w-[1017px] aspect-[1.538461538461538] absolute bottom-[45px] left-[355px] z-2">
+      <div
+        className="video relative h-full sm:mt-0 w-[170%] md:w-[150%] translate-x-[-45%] lg:w-[1620px] lg: xl:w-[1920px] left-[50%] aspect-[1.335187] lg:translate-x-[-45%] top-0 min-w-[414px]"
+        style={{
+          marginTop: "clamp(0px, calc((640px - 100vw) * 0.59), 100px)",
+          minWidth: "414px",
+        }}
+      >
+        {/* <----------GRADIENT UNDERLAY----------> */}
+        <div className="absolute w-full h-[200px] xl:h-[420px] bg-gradient-to-t from-[#05070B] via-[#05070B] to-transparent bottom-[10px] z-3" />
+        <div className="w-[53%] bottom-[2.4%] left-[18.5%] md:w-[53%] md:bottom-[3%] md:left-[18.5%] lg:w-[865px] lg:bottom-[34px] lg:left-[295px] xl:w-[1017px] aspect-[1.538461538461538] absolute xl:bottom-[45px] xl:left-[355px] z-2">
           <Image
             src={"/images/MacBook.png"}
             alt="editor dashboard image"
@@ -39,6 +44,7 @@ export default function HeroSection() {
             fill
           />
         </div>
+
         <video
           autoPlay
           loop
@@ -47,15 +53,15 @@ export default function HeroSection() {
           className="absolute inset-0 w-full h-full"
           width="1920"
           height="1438"
-          style={{ opacity: 1 }}
+          style={{ opacity: 0.5 }}
         >
           <source src="/videos/0512(4).mp4" type="video/mp4" />
           <source src="#" type="video/webm" />
         </video>
       </div>
       {/* <----------BOTTOM CAROUSEL----------> */}
-      <div className="flex items-start flex-col justify-end absolute bottom-0 max-w-[1280px] translate-x-[-50%] left-[50%] pb-[80px] z-10 w-full">
-        <p className="text-[14px]">
+      <div className="flex items-start flex-col justify-end absolute bottom-0 max-w-[1280px] translate-x-[-50%] left-[50%] xl:pb-[60px] pt-[10px] z-10 w-full px-[20px] bg-[#05070B]">
+        <p className="text-[14px] mb-2">
           Everything you need for seamless blogging:
         </p>
         <Scroll />

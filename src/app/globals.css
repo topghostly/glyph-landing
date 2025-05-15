@@ -113,6 +113,12 @@
     max-width: 1280px;
     overflow: hidden;
   }
+  .video {
+    @media screen and (max-width: 414px) {
+      width: 750px;
+      min-width: 750px;
+    }
+  }
   .gap_1 {
     gap: clamp(4rem, 5vh, 13rem);
   }
@@ -136,10 +142,10 @@
 
 @layer base {
   h1 {
-    @apply text-7xl font-bold mb-4;
+    @apply xl:text-7xl font-bold mb-4 lg:text-6xl md:text-5xl sm:text-4xl text-3xl;
   }
   h2 {
-    @apply text-6xl font-bold mt-6 mb-2;
+    @apply xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-bold mt-6 mb-2;
   }
   p {
     @apply text-base leading-6 text-gray-800 dark:text-gray-300 mb-4 text-[18px];

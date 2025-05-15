@@ -18,7 +18,7 @@ export default function Scroll() {
     if (!firstTextRef.current && !secondTextRef.current) return;
     gsap.set(firstTextRef.current, { xPercent: xPercent });
     gsap.set(secondTextRef.current, { xPercent: xPercent });
-    xPercent -= 0.06;
+    xPercent -= 0.045;
     requestAnimationFrame(animation);
   };
 
@@ -36,39 +36,59 @@ export default function Scroll() {
             className="flex gap-2 w-[900px] justify-between whitespace-nowrap overflow-x-auto z-[-1]"
             ref={firstTextRef}
           >
-            <p className="text-[14px] text-white">Offline Drafting</p>
-            <p className="text-[14px] text-white">•</p>
-            <p className="text-[14px] text-white">Rich Text Editing</p>
-            <p className="text-[14px] text-white">•</p>
-            <p className="text-[14px] text-white">Instant Sync & Publish</p>
-            <p className="text-[14px] text-white">•</p>
-            <p className="text-[14px] text-white">
+            <p className="text-[14px] font-satoshi-b text-white">
+              Offline Drafting
+            </p>
+            <p className="text-[14px] font-satoshi-b text-white">•</p>
+            <p className="text-[14px] font-satoshi-b text-white">
+              Rich Text Editing
+            </p>
+            <p className="text-[14px] font-satoshi-b text-white">•</p>
+            <p className="text-[14px] font-satoshi-b text-white">
+              Instant Sync & Publish
+            </p>
+            <p className="text-[14px] font-satoshi-b text-white">•</p>
+            <p className="text-[14px] font-satoshi-b text-white">
               Tag & Category Organization
             </p>
-            <p className="text-[14px] text-white">•</p>
-            <p className="text-[14px] text-white">Developer SDK</p>
-            <p className="text-[14px] text-white">•</p>
-            <p className="text-[14px] text-white">Image Management</p>
-            <p className="text-[14px] text-white">•</p>
+            <p className="text-[14px] font-satoshi-b text-white">•</p>
+            <p className="text-[14px] font-satoshi-b text-white">
+              Developer SDK
+            </p>
+            <p className="text-[14px] font-satoshi-b text-white">•</p>
+            <p className="text-[14px] font-satoshi-b text-white">
+              Image Management
+            </p>
+            <p className="text-[14px] font-satoshi-b text-white">•</p>
           </div>
           <div
             className="flex gap-2 w-[900px] justify-between whitespace-nowrap overflow-x-auto z-[-1]"
             ref={secondTextRef}
           >
-            <p className="text-[14px] text-white">Offline Drafting</p>
-            <p className="text-[14px] text-white">•</p>
-            <p className="text-[14px] text-white">Rich Text Editing</p>
-            <p className="text-[14px] text-white">•</p>
-            <p className="text-[14px] text-white">Instant Sync & Publish</p>
-            <p className="text-[14px] text-white">•</p>
-            <p className="text-[14px] text-white">
+            <p className="text-[14px] font-satoshi-b text-white">
+              Offline Drafting
+            </p>
+            <p className="text-[14px] font-satoshi-b text-white">•</p>
+            <p className="text-[14px] font-satoshi-b text-white">
+              Rich Text Editing
+            </p>
+            <p className="text-[14px] font-satoshi-b text-white">•</p>
+            <p className="text-[14px] font-satoshi-b text-white">
+              Instant Sync & Publish
+            </p>
+            <p className="text-[14px] font-satoshi-b text-white">•</p>
+            <p className="text-[14px] font-satoshi-b text-white">
               Tag & Category Organization
             </p>
-            <p className="text-[14px] text-white">•</p>
-            <p className="text-[14px] text-white">Developer SDK</p>
-            <p className="text-[14px] text-white">•</p>
-            <p className="text-[14px] text-white">Image Management</p>
-            <p className="text-[14px] text-white">•</p>
+            <p className="text-[14px] font-satoshi-b text-white">•</p>
+            <p className="text-[14px] font-satoshi-b text-white">
+              Developer SDK
+            </p>
+            <p className="text-[14px] font-satoshi-b text-white">•</p>
+            <p className="text-[14px] font-satoshi-b text-white">
+              Image Management
+            </p>
+            <p className="text-[14px] font-satoshi-b text-white">•</p>
           </div>
         </div>
       </div>

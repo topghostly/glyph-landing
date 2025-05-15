@@ -6,7 +6,7 @@ import NavBar from "@/components/nav-bar";
 export default function Home() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <main>
         <HeroSection />
         <AboutSection />
