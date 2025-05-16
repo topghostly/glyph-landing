@@ -10,7 +10,7 @@ export default function AboutCard({
   // text: string;
 }) {
   return (
-    <article className="w-full h-full bg-background rounded-[15px] overflow-hidden">
+    <article className="max-w-[500px] h-[300px] sm:max-w-full mx-auto w-full md:h-full bg-background rounded-[15px] overflow-hidden">
       {children}
     </article>
   );

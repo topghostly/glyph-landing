@@ -8,18 +8,18 @@ export default function HeroSection() {
   return (
     <section className="relative overflow-x-hidden bg-[#05070B]">
       <div className="top-[100px] xl:top-[160px] w-full absolute max-w-[1280px] translate-x-[-50%] left-[50%] pb-[60px] z-10 px-[20px]">
-        <div className="flex flex-col gap-2 md:gap-6 w-[60%] md:w-[100%]">
+        <div className="flex flex-col gap-2 md:gap-6 w-[80%] md:w-[100%]">
           <h1 className="font-satoshi-b sm:w-full  md:max-w-[500px] xl:max-w-[616px] m-0">
             All You Need to Tell Your Story
           </h1>
-          <p className="sm:w-full md:max-w-[400px] xl:max-w-[480px] m-0">
+          <p className="sm:w-full w-[80%] md:max-w-[400px] xl:max-w-[480px] m-0">
             Offline-first CMS: create anywhere, then sync when you&apos;re
             ready.
           </p>
           <div className="flex mt-2">
             <Button
               href="#"
-              classname="flex gap-[1px] justify-center items-center"
+              classname="flex gap-[1px] justify-center items-center bg-white/90"
             >
               GET STARTED <ArrowDownRight size={16} strokeWidth={2.5} />
             </Button>
@@ -30,7 +30,7 @@ export default function HeroSection() {
       <div
         className="video relative h-full sm:mt-0 w-[170%] md:w-[150%] translate-x-[-45%] lg:w-[1620px] lg: xl:w-[1920px] left-[50%] aspect-[1.335187] lg:translate-x-[-45%] top-0 min-w-[414px]"
         style={{
-          marginTop: "clamp(0px, calc((640px - 100vw) * 0.59), 100px)",
+          marginTop: "clamp(0px, calc((640px - 100vw) * 0.59), 120px)",
           minWidth: "414px",
         }}
       >
@@ -53,7 +53,7 @@ export default function HeroSection() {
           className="absolute inset-0 w-full h-full"
           width="1920"
           height="1438"
-          style={{ opacity: 0.5 }}
+          style={{ opacity: 1 }}
         >
           <source src="/videos/0512(4).mp4" type="video/mp4" />
           <source src="#" type="video/webm" />

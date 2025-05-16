@@ -2,11 +2,11 @@ import React, { ReactNode } from "react";
 
 export default function NavButton({
   children,
-  onClick,
+  // onClick,
   classname,
 }: {
   children: ReactNode;
-  onClick?: () => void;
+  // onClick?: () => void;
   classname?: string;
 }) {
   return (
