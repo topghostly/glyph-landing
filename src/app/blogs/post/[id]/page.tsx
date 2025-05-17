@@ -18,7 +18,7 @@ export async function generateMetadata(
     // 2) unwrap the promise
     const { id } = await params;
 
-    const res = await fetch(`https://glyph-cms.vercel.app/api/blog/get-blog`, {
+    const res = await fetch(`https://glyph-landing.vercel.app/api/get-blog`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ _localID: id }),

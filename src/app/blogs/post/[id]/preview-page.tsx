@@ -22,7 +22,7 @@ export default function PreviewPage() {
   const getBlog = async () => {
     setLoading(true);
     try {
-      const res = await fetch("/api/blog/get-blog", {
+      const res = await fetch("/api/get-blog", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
