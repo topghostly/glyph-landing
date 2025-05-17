@@ -13,7 +13,7 @@ export default function Button({
   return (
     <Link
       href={href}
-      className={`flex rounded-full text-background text-[12px] font-satoshi-b ${classname}`}
+      className={`flex rounded-full text-background text-[11px] sm:text-[12px] font-satoshi-b ${classname}`}
     >
       {children}
     </Link>

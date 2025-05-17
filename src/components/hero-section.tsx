@@ -13,13 +13,15 @@ export default function HeroSection() {
             All You Need to Tell Your Story
           </h1>
           <p className="sm:w-full w-[80%] md:max-w-[400px] xl:max-w-[480px] m-0">
-            Offline-first CMS: create anywhere, then sync when you&apos;re
-            ready.
+            {/* Offline-first CMS: create anywhere, then sync when you&apos;re
+            ready. */}
+            Glyph is a offline-first CMS for seamless storytelling. Draft ideas
+            on the go, then sync to the web when you&apos;re ready.
           </p>
           <div className="flex mt-2">
             <Button
               href="#"
-              classname="flex gap-[1px] justify-center items-center bg-white/90"
+              classname="w-[130px] h-[35px] sm:w-[180px] sm:h-[45px] flex gap-[1px] justify-center items-center bg-white/90"
             >
               GET STARTED <ArrowDownRight size={16} strokeWidth={2.5} />
             </Button>

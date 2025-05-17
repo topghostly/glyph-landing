@@ -7,7 +7,7 @@ export default function FooterSection() {
   return (
     <section>
       <div className="container pb-[20px] py-[20px] md:pt-[40px] lg:pt-[100px]">
-        <div className="flex gap-3 flex-col justify-center items-center md:flex-row relative select-none">
+        <div className="flex gap-3 flex-col justify-center items-center md:justify-start md:flex-row relative select-none">
           <div className="w-[400px] md:w-[600px] lg:w-[700px] aspect-[2.096774193548387] relative translate-x-[-0px]">
             <Image
               src={"/images/footer.png"}
@@ -26,16 +26,16 @@ export default function FooterSection() {
               isn&apos;t just a tool it&apos;s a space for thinkers, and
               storytellers
             </p>
-            <div className="flex  lg:flex-row gap-3 mt-2">
+            <div className="flex justify-center lg:flex-row gap-3 mt-2">
               <Button
                 href="#"
-                classname="w-[180px] h-[45px] flex justify-center font-satoshi-b items-center bg-white/90"
+                classname="w-[130px] h-[35px] sm:w-[180px] sm:h-[45px] flex justify-center font-satoshi-b items-center bg-white/90"
               >
                 START NOW
               </Button>
               <Button
                 href="#"
-                classname="w-[180px] h-[45  px] text-white flex justify-center font-satoshi-b items-center gap-1 bg-none border border-gray-800"
+                classname="w-[170px] h-[35px] sm:w-[180px] sm:h-[45px] text-white flex justify-center font-satoshi-b items-center gap-1 bg-none border border-gray-800"
               >
                 <Github size={16} /> STAR US ON GITHUB
               </Button>

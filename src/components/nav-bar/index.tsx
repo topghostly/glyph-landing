@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import NavButton from "./buttons";
 import { Github } from "lucide-react";
+import { HamburgerMenu } from "./hamburger";
 
 function NavBar() {
   const INTERNAL_LINKS: { name: string; href: string }[] = [
@@ -31,7 +32,7 @@ function NavBar() {
           </Link>
 
           {/* <----------FIRST LINK----------> */}
-          <ul className="flex gap-2 justify-center items-center">
+          <ul className="gap-2 justify-center items-center hidden md:flex">
             {INTERNAL_LINKS.map((link, index) => (
               <li
                 key={index}
@@ -44,7 +45,7 @@ function NavBar() {
           {/* <----------FIRST LINK----------> */}
         </div>
 
-        <div className="flex gap-2">
+        <div className="gap-2 hidden md:flex">
           <NavButton classname="border-none flex gap-1 text-[14px] justify-center items-center">
             <span>
               <Github size={15} />
@@ -54,6 +55,7 @@ function NavBar() {
           <NavButton>Sign In</NavButton>
           <NavButton>Get started</NavButton>
         </div>
+        <HamburgerMenu />
       </div>
     </header>
   );
