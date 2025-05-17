@@ -5,7 +5,7 @@ import ErrorPage from "@/components/preview/error";
 import Loader from "@/components/preview/loader";
 import AdvertBoard from "@/components/preview/advert-board";
 import CreatorBoard from "@/components/preview/creator-board";
-// import { Button } from "@/components/ui/button";
+import Button from "@/components/ui/button";
 import { BlogContentProp, Node } from "@/types";
 import { User } from "@/types";
 import Image from "next/image";
@@ -81,12 +81,12 @@ export default function PreviewPage() {
               </p>
             </div>
             {/* SIGNUP BUTTON */}
-            {/* <Button
-              variant={"default"}
-              className="hover:bg-gray-200 border border-gray-200"
+            <Button
+              href="https://editor.getglyph.app/auth"
+              classname="hover:bg-gray-200 border border-gray-200 w-[80px] h-[40px] flex justify-center items-center"
             >
               Sign Up
-            </Button> */}
+            </Button>
           </div>
         </nav>
         {/*  NAVBAR */}

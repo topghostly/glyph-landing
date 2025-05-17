@@ -19,8 +19,7 @@ export default function AdvertBoard() {
       </div>
       <div className="px-5">
         <Button
-          href=""
-          //   variant={"secondary"}
+          href="https://www.getglyph.app/"
           classname="w-full text-sm bg-blue-200 border-[1px] border-blue-300 text-blue-900 h-[40px] flex justify-center items-center"
         >
           Try Glyph
