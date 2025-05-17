@@ -23,10 +23,12 @@ export default function CreatorBoard({
           className="rounded-full"
         />
         <div>
-          <p className="text-lg text-[14px] font-bold truncate w-[130px]">
+          <p className="text-lg text-[14px] font-bold truncate w-[130px] m-0 leading-tight text-[#334155] ">
             {fullname ?? "Anonymous"}
           </p>
-          <p className="text-xs">@{fullname!.replace(/\s+/g, "")}</p>
+          <p className="text-xs m-0 leading-tight text-[#334155] ">
+            @{fullname!.replace(/\s+/g, "")}
+          </p>
         </div>
       </div>
     </div>

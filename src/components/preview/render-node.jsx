@@ -8,7 +8,11 @@ export const renderNode = (node, index) => {
   switch (node.type) {
     case "paragraph":
       if (!node.content) return <br key={index} />;
-      return <p key={index}>{renderText(node)}</p>;
+      return (
+        <p className="text-[#334155]" key={index}>
+          {renderText(node)}
+        </p>
+      );
 
     case "heading":
       const HeadingTag = `h${node.attrs?.level}`;

@@ -70,12 +70,12 @@ export default function PreviewPage() {
           <div className="flex gap-1 items-center justify-between w-full max-w-[1400px] mx-auto h-full">
             <div className="flex gap-1 items-end">
               <Image
-                src={"/images/svg/Glyph-black.svg"}
+                src={"/images/Glyph-black.svg"}
                 alt="glyph logo"
                 width={35}
                 height={35}
               />
-              <p className="text-[1.5rem] font-bold text-black">
+              <p className="text-[1.5rem] font-bold text-black m-0">
                 Glyph
                 {/* <span className="font-medium text-sm">(beta)</span> */}
               </p>
