@@ -18,7 +18,7 @@ export default function FooterSection() {
           </div>
           {/* <----------TEXT AREA----------> */}
           <div className=" flex flex-col gap-2 lg:gap-3 relative md:absolute top-50% right-0 w-[350px] xl:w-[450px] xl:right-[5%]">
-            <h2 className="text-center md:text-left font-satoshi-m">
+            <h2 className="h2 text-center md:text-left font-satoshi-m">
               Join the Writing Renaissance
             </h2>
             <p className="text-center md:text-left">

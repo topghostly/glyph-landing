@@ -1,19 +1,22 @@
+import Link from "next/link";
 import React, { ReactNode } from "react";
 
 export default function NavButton({
   children,
-  // onClick,
+  href,
   classname,
 }: {
   children: ReactNode;
-  // onClick?: () => void;
+  href: string;
   classname?: string;
 }) {
   return (
-    <button
+    <Link
+      href={href}
+      target="_blank"
       className={`${classname} border-[1px] border-primary-foreground px-4 py-1 text-[12px] rounded-full cursor-pointer`}
     >
       {children}
-    </button>
+    </Link>
   );
 }

@@ -13,7 +13,7 @@ function NavBar() {
     },
     {
       name: "Editor",
-      href: "#",
+      href: "https://editor.getglyph.app/auth",
     },
   ];
   return (
@@ -46,14 +46,19 @@ function NavBar() {
         </div>
 
         <div className="gap-2 hidden md:flex">
-          <NavButton classname="border-none flex gap-1 text-[14px] justify-center items-center">
+          <NavButton
+            classname="border-none flex gap-1 text-[14px] justify-center items-center"
+            href="https://github.com/topghostly/glyph-cms"
+          >
             <span>
               <Github size={15} />
             </span>
             Star Us
           </NavButton>
-          <NavButton>Sign In</NavButton>
-          <NavButton>Get started</NavButton>
+          <NavButton href="https://editor.getglyph.app/auth">Sign In</NavButton>
+          <NavButton href="https://editor.getglyph.app/auth">
+            Get started
+          </NavButton>
         </div>
         <HamburgerMenu />
       </div>

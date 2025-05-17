@@ -6,7 +6,7 @@ export default function AboutSection() {
     <section className="w-full bg-foreground">
       <div className="lg:w-[960px] xl:w-[1280px] container py-[40px] md:py-[60px] lg:py-[100px]">
         <div className="flex  flex-col gap-3">
-          <h2 className="text-background font-satoshi-b">
+          <h2 className="h2 text-background font-satoshi-b">
             Effortless writing, elevated
           </h2>
           <p className="text-muted-foreground max-w-[600px]">

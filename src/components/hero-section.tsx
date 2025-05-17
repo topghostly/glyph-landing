@@ -9,7 +9,7 @@ export default function HeroSection() {
     <section className="relative overflow-x-hidden bg-[#05070B]">
       <div className="top-[100px] xl:top-[160px] w-full absolute max-w-[1280px] translate-x-[-50%] left-[50%] pb-[60px] z-10 px-[20px]">
         <div className="flex flex-col gap-2 md:gap-6 w-[80%] md:w-[100%]">
-          <h1 className="font-satoshi-b sm:w-full  md:max-w-[500px] xl:max-w-[616px] m-0">
+          <h1 className="h1 font-satoshi-b sm:w-full  md:max-w-[500px] xl:max-w-[616px] m-0">
             All You Need to Tell Your Story
           </h1>
           <p className="sm:w-full w-[80%] md:max-w-[400px] xl:max-w-[480px] m-0">
