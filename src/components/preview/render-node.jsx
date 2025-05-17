@@ -1,5 +1,6 @@
 "use client";
 
+import { Node } from "@/types";
 import Image from "next/image";
 import React from "react";
 
