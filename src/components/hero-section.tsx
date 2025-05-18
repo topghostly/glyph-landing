@@ -38,6 +38,7 @@ export default function HeroSection() {
       >
         {/* <----------GRADIENT UNDERLAY----------> */}
         <div className="absolute w-full h-[200px] xl:h-[420px] bg-gradient-to-t from-[#05070B] via-[#05070B] to-transparent bottom-[10px] z-3" />
+        <div className="absolute w-full h-[200px] xl:h-[420px] bg-gradient-to-b from-[#05070B] to-transparent top-0 z-3" />
         <div className="w-[53%] bottom-[2.4%] left-[18.5%] md:w-[53%] md:bottom-[3%] md:left-[18.5%] lg:w-[865px] lg:bottom-[34px] lg:left-[295px] xl:w-[1017px] aspect-[1.538461538461538] absolute xl:bottom-[45px] xl:left-[355px] z-2">
           <Image
             src={"/images/MacBook.png"}

@@ -23,7 +23,7 @@ function NavBar() {
           <Link href={"/"}>
             <div className="relative w-fit">
               <Image
-                src={"/images/glyph-05.svg"}
+                src={"/images/glyph-05-05.svg"}
                 alt="glyph logo"
                 width={90}
                 height={60}
