@@ -20,7 +20,7 @@ export default function HeroSection() {
           </p>
           <div className="flex mt-2">
             <Button
-              href="#"
+              href="https://editor.getglyph.app/auth"
               classname="w-[130px] h-[35px] sm:w-[180px] sm:h-[45px] flex gap-[1px] justify-center items-center bg-white/90"
             >
               GET STARTED <ArrowDownRight size={16} strokeWidth={2.5} />
@@ -58,8 +58,8 @@ export default function HeroSection() {
           height="1438"
           style={{ opacity: 1 }}
         >
-          <source src="/videos/0512(4).mp4" type="video/mp4" />
-          <source src="#" type="video/webm" />
+          <source src="/videos/hero.mp4" type="video/mp4" />
+          <source src="/videos/hero.webm" type="video/webm" />
         </video>
       </div>
       {/* <----------BOTTOM CAROUSEL----------> */}

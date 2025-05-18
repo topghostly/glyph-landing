@@ -52,15 +52,15 @@ export const HamburgerMenu: React.FC = () => {
   }, [open]);
 
   const items = [
-    { href: "/blogs", label: "Blogs" },
-    { href: "/editor", label: "Editor" },
+    { href: "#", label: "Blogs" },
+    { href: "https://editor.getglyph.app/auth", label: "Editor" },
     {
-      href: "/star-us",
+      href: "https://github.com/topghostly/glyph-cms",
       icon: <Github size={13} strokeWidth={4} />,
       label: "Star Us",
     },
-    { href: "/signin", label: "Sign In" },
-    { href: "/get-started", label: "Get Started" },
+    { href: "https://editor.getglyph.app/auth", label: "Sign In" },
+    { href: "https://editor.getglyph.app/auth", label: "Get Started" },
   ];
 
   return (
@@ -81,9 +81,10 @@ export const HamburgerMenu: React.FC = () => {
         className="fixed top-0 left-0 h-full w-3/4 max-w-xs bg-background/95 backdrop-blur-md opacity-0 -translate-x-full z-50 flex flex-col pt-16 px-6"
       >
         <nav className="flex flex-col">
-          {items.map(({ href, icon, label }) => (
+          {items.map(({ href, icon, label }, index) => (
             <Link
-              key={href}
+              key={index}
+              target="_blank"
               href={href}
               onClick={() => setOpen(false)}
               className="border-b border-white/10 flex py-4 items-center text-[14px] gap-1 font-medium hover:text-accent transition"

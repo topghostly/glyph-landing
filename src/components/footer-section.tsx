@@ -28,13 +28,13 @@ export default function FooterSection() {
             </p>
             <div className="flex justify-center lg:flex-row gap-3 mt-2">
               <Button
-                href="#"
+                href="https://editor.getglyph.app/auth"
                 classname="w-[130px] h-[35px] sm:w-[180px] sm:h-[45px] flex justify-center font-satoshi-b items-center bg-white/90"
               >
                 START NOW
               </Button>
               <Button
-                href="#"
+                href="https://github.com/topghostly/glyph-cms"
                 classname="w-[170px] h-[35px] sm:w-[180px] sm:h-[45px] text-white flex justify-center font-satoshi-b items-center gap-1 bg-none border border-gray-800"
               >
                 <Github size={16} /> STAR US ON GITHUB

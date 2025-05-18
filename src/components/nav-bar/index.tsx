@@ -56,9 +56,9 @@ function NavBar() {
             Star Us
           </NavButton>
           <NavButton href="https://editor.getglyph.app/auth">Sign In</NavButton>
-          <NavButton href="https://editor.getglyph.app/auth">
+          {/* <NavButton href="https://editor.getglyph.app/auth">
             Get started
-          </NavButton>
+          </NavButton> */}
         </div>
         <HamburgerMenu />
       </div>
