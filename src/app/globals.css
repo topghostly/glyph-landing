@@ -13,12 +13,12 @@
   font-style: normal;
 }
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
   --font-satoshi-medium: "Satoshi-Medium", system-ui, sans-serif;
   --font-satoshi-bold: "Satoshi-Bold", system-ui, sans-serif;
-}
+} */
 
 @theme inline {
   --color-background: var(--background);
@@ -61,6 +61,35 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #09090b;
+    --foreground: rgb(248, 248, 248);
+    --card: rgb(9, 9, 11);
+    --card-foreground: rgb(248, 248, 248);
+    --popover: rgb(9, 9, 11);
+    --popover-foreground: rgb(248, 248, 248);
+    --primary: rgb(248, 248, 248);
+    --primary-foreground: rgb(26, 26, 26);
+    --secondary: rgb(35, 35, 35);
+    --secondary-foreground: rgb(248, 248, 248);
+    --muted: rgb(35, 35, 35);
+    --muted-foreground: rgb(73, 73, 73);
+    --accent: rgb(35, 35, 35);
+    --accent-foreground: rgb(248, 248, 248);
+    --destructive: rgb(130, 40, 40);
+    --destructive-foreground: rgb(248, 248, 248);
+    --border: rgb(35, 35, 35);
+    --input: rgb(35, 35, 35);
+    --radius: 0.4rem;
+    --ring: rgb(200, 200, 220);
+    --chart-1: rgb(77, 124, 255);
+    --chart-2: rgb(51, 178, 153);
+    --chart-3: rgb(255, 153, 77);
+    --chart-4: rgb(178, 102, 255);
+    --chart-5: rgb(255, 77, 128);
+  }
+}
+@media (prefers-color-scheme: light) {
   :root {
     --background: #09090b;
     --foreground: rgb(248, 248, 248);
