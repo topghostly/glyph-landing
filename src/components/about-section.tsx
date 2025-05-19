@@ -24,10 +24,11 @@ export default function AboutSection() {
                   loop
                   muted
                   playsInline
+                  preload="metadata"
                   className="absolute inset-0 w-full h-full object-cover"
                   style={{ opacity: 1 }}
                 >
-                  <source src="/videos/backup.mp4" type="video/mp4" />
+                  {/* <source src="/videos/backup.mp4" type="video/mp4" /> */}
                   <source src="/videos/backup.webm" type="video/webm" />
                 </video>
                 <div className="relative bg-gradient-to-t from-background to-transparent h-[50%] w-full z-3 flex items-end p-4">
@@ -48,10 +49,11 @@ export default function AboutSection() {
                   loop
                   muted
                   playsInline
+                  preload="metadata"
                   className="absolute inset-0 w-[70%] mx-auto h-full"
                   style={{ opacity: 1 }}
                 >
-                  <source src="/videos/Interface.mp4" type="video/mp4" />
+                  {/* <source src="/videos/Interface.mp4" type="video/mp4" /> */}
                   <source src="/videos/Interface.webm" type="video/webm" />
                 </video>
                 <div className="relative bg-gradient-to-t from-background to-transparent h-[50%] w-full z-3 flex items-end p-4">
@@ -81,11 +83,12 @@ export default function AboutSection() {
                   autoPlay
                   loop
                   muted
+                  preload="metadata"
                   playsInline
                   className="absolute inset-0 w-full h-full object-cover"
                   style={{ opacity: 1 }}
                 >
-                  <source src="/videos/markdown.mp4" type="video/mp4" />
+                  {/* <source src="/videos/markdown.mp4" type="video/mp4" /> */}
                   <source src="/videos/markdown.webm" type="video/webm" />
                 </video>
                 <div className="relative bg-gradient-to-t from-background to-transparent h-[50%] w-full z-3 flex items-end p-4">
