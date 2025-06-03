@@ -12,7 +12,7 @@ export default function HeroSection() {
           <h1 className="h1 font-satoshi-b sm:w-full  md:max-w-[500px] xl:max-w-[616px] m-0">
             All You Need to Tell Your Story
           </h1>
-          <p className="sm:w-full w-[80%] md:max-w-[400px] xl:max-w-[480px] m-0">
+          <p className="sm:w-full w-[80%] md:max-w-[400px] x  l:max-w-[480px] m-0">
             {/* Offline-first CMS: create anywhere, then sync when you&apos;re
             ready. */}
             Glyph is a offline-first CMS for seamless storytelling. Draft ideas
@@ -60,7 +60,7 @@ export default function HeroSection() {
           style={{ opacity: 1 }}
         >
           {/* <source src="/videos/hero.mp4" type="video/mp4" /> */}
-          <source src="/videos/hero.webm" type="video/webm" />
+          <source src="/videos/new/hero.webm" type="video/webm" />
         </video>
       </div>
       {/* <----------BOTTOM CAROUSEL----------> */}

@@ -29,7 +29,7 @@ export default function AboutSection() {
                   style={{ opacity: 1 }}
                 >
                   {/* <source src="/videos/backup.mp4" type="video/mp4" /> */}
-                  <source src="/videos/backup.webm" type="video/webm" />
+                  <source src="/videos/new/backup.webm" type="video/webm" />
                 </video>
                 <div className="relative bg-gradient-to-t from-background to-transparent h-[50%] w-full z-3 flex items-end p-4">
                   <p className="text-[15px] md:text-[16px] p-0 m-0">
@@ -54,7 +54,7 @@ export default function AboutSection() {
                   style={{ opacity: 1 }}
                 >
                   {/* <source src="/videos/Interface.mp4" type="video/mp4" /> */}
-                  <source src="/videos/Interface.webm" type="video/webm" />
+                  <source src="/videos/new/Interface.webm" type="video/webm" />
                 </video>
                 <div className="relative bg-gradient-to-t from-background to-transparent h-[50%] w-full z-3 flex items-end p-4">
                   <p className="text-[15px] md:text-[16px] p-0 m-0 max-w-[100%] xl:max-w-[70%]">
@@ -89,7 +89,7 @@ export default function AboutSection() {
                   style={{ opacity: 1 }}
                 >
                   {/* <source src="/videos/markdown.mp4" type="video/mp4" /> */}
-                  <source src="/videos/markdown.webm" type="video/webm" />
+                  <source src="/videos/new/markdown.webm" type="video/webm" />
                 </video>
                 <div className="relative bg-gradient-to-t from-background to-transparent h-[50%] w-full z-3 flex items-end p-4">
                   <p className="text-[15px] md:text-[16px] p-0 m-0 max-w-[100%] xl:max-w-[70%]">

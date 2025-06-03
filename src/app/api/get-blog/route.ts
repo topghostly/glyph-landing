@@ -1,49 +1,46 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse, NextRequest } from "next/server";
 import connectToDB from "../../../lib/mongodb";
 import Blog from "../../../models/blog";
 import User from "@/models/user";
 
 export async function POST(req: NextRequest) {
   try {
-    const { _localID } = await req.json();
-
-    if (!_localID) {
-      return NextResponse.json(
-        { error: "Local ID is required" },
-        { status: 400 }
-      );
-    }
-
     await connectToDB();
 
-    const blog = await Blog.findOne({ _localID });
+    // Step 1: Get all blogs
+    const blogs = await Blog.find();
+    console.log("The first blogs:", blogs)
 
-    if (!blog) {
-      return NextResponse.json({ error: "Blog not found" }, { status: 404 });
-    }
+    // Step 2: Get all unique creator IDs
+    const creatorIds = [...new Set(blogs.map((blog) => blog.creator))];
 
-    const creator = await User.findById(blog.creator);
+    // Step 3: Fetch the corresponding users
+    const users = await User.find({ _id: { $in: creatorIds } });
 
-    if (!creator) {
-      return NextResponse.json({ error: "Creator not found" }, { status: 404 });
-    }
+    // Step 4: Map users by ID for quick access
+    const userMap = new Map(users.map((user) => [user._id.toString(), user]));
 
-    return NextResponse.json(
-      {
-        blog,
-        creator: {
-          _id: creator._id,
-          email: creator.email,
-          fullname: creator.fullname,
-          image: creator.image,
-        },
-      },
-      { status: 200 }
-    );
+    // Step 5: Attach user info to each blog
+    const formattedBlogs = blogs.map((blog) => {
+      const creator = userMap.get(blog.creator.toString());
+      return {
+        ...blog.toObject(),
+        creator: creator
+          ? {
+              _id: creator._id,
+              email: creator.email,
+              fullname: creator.fullname,
+              image: creator.image,
+            }
+          : null,
+      };
+    });
+
+    return NextResponse.json({ blogs: formattedBlogs }, { status: 200 });
   } catch (error) {
-    console.error("Error fetching blog and creator:", error);
+    console.error("Error fetching blogs and creators:", error);
     return NextResponse.json(
-      { error: "Failed to fetch blog and creator" },
+      { error: "Failed to fetch blogs and creators" },
       { status: 500 }
     );
   }
