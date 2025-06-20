@@ -7,14 +7,6 @@ export default function FooterSection() {
     <section className="bg-white text-background">
       <div className="container pb-[20px] py-[20px] md:pt-[40px] lg:pt-[100px] ">
         <div className="flex gap-3 flex-col justify-center items-center relative select-none">
-          {/* <div className="w-[400px] md:w-[600px] lg:w-[700px] aspect-[2.096774193548387] relative translate-x-[-0px]">
-            <Image
-              src={"/images/footer.png"}
-              alt="footer image"
-              fill
-              className="select-none pointer-none:" 
-            />
-          </div> */}
           {/* <----------TEXT AREA----------> */}
           <div className=" flex flex-col gap-2 lg:gap-3 relative w-[350px] xl:w-[450px]">
             <h2 className="h2 text-center md:text-left font-satoshi-m">
